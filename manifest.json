@@ -1,0 +1,19 @@
+{
+  
+  "manifest_version": 3,
+  "name": "HLS Downloader",
+  "version": "1.0.1",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+        "matches": ["https://www.instagram.com/*"],
+        "js": ["content.js"]
+    }
+  ]    
+}
